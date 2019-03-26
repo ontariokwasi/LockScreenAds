@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nalosolutions.gakomeng.swypeam.ConfirmOtp">
+
+    <LinearLayout
+        android:id="@+id/cformlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/google_1x">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/google_1x"
+                    android:text="Please enter the six(6) digits pin sent to your mobile number"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/pinbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:letterSpacing="1"
+                    android:maxLength="6"
+                    android:shadowColor="@android:color/holo_blue_bright"
+                    android:textAlignment="center"
+                    android:textColorLink="@android:color/holo_blue_bright"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/confirmpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/google_1x"
+                    android:layout_marginTop="@dimen/google_1x"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="@dimen/google_1x"
+                    android:paddingTop="@dimen/fastscroll__handle_width"
+                    android:text="Confirm"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resendpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/google_1x"
+                    android:layout_marginTop="@dimen/google_1x"
+                    android:clickable="true"
+                    android:text="Didn't get PIN? Click to Resend"
+                    android:textColor="@color/link"
+                    android:textStyle="normal|italic" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

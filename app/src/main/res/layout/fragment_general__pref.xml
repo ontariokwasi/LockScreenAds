@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nalosolutions.gakomeng.swypeam.General_PrefFragment"
+    tools:showIn="@layout/activity_general__pref">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/pref_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:divider="?android:attr/listDivider"
+            android:dividerPadding="@dimen/fastscroll__handle_inset"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/google_1x"
+                android:paddingTop="@dimen/google_1x"
+                android:text="@string/preference_text"
+                android:textColor="@color/defaultContentColor" />
+
+            <Switch
+                android:id="@+id/health"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/health_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sports"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/sports_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/cuisine"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/cuisine_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/entertainment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/entertainment_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/religion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/religion_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/technology"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/technology_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/finance"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/business_finance_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/fashion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/fashion_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/property"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:lines="4"
+                android:onClick="switched"
+                android:text="@string/property_text"
+                android:textColor="@color/tintedblack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

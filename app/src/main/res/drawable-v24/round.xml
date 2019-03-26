@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="@dimen/fastscroll__bubble_corner"
+    android:dither="true"
+    android:shape="rectangle">
+    <solid android:color="#fff" />
+    <corners
+        android:bottomLeftRadius="50dp"
+        android:bottomRightRadius="50dp"
+        android:topLeftRadius="50dp"
+        android:topRightRadius="50dp" />
+    <gradient android:startColor="@color/colorAccent"
+        android:endColor="@color/colorAccent"/>
+</shape>
